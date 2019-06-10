@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8" />
+    <title>ECIF刷数任务</title>
+</head>
+<body>
+<h1 th:inlines="text">刷数任务</h1>
+<form action="/task/start" method="get" enctype="multipart/form-data">
+    <p><input type="submit" value="执行任务"/></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@10.97.12.80:1522:XE
+    username: atom
+    password: atom
+    driverClassName: oracle.jdbc.OracleDriver
+    hikari:
+      maximum-pool-size: 50
+      minimum-idle: 10
+      auto-commit: true
+      read-only: false
+      connection-timeout: 60000
+      idle-timeout: 60000
+      validation-timeout: 3000
+      max-lifetime: 60000
+      login-timeout: 5
+
+server:
+  port: 9988
+
+
+app:
+  upload:
+    dir: D:\\tmp\\dizhi.xlsx
+bbd:
+  atom:
+    app-context: onlineloan
+    system:
+      token: eyJhbGciOiJIUzUxMiJ9.eyJ1aWQiOjMsImV4cCI6MTY4MTQ2OTY4OSwidGlkIjotMSwidXNlcm5hbWUiOiJjb21tb24tc3lzdGVtIn0.zi8x6b850bXJYkgOb5g5G0B_DEJP6MJDdLIT61tfMzgQottOAnxZBmdUhaZz4SfSnA9dhq01MZJlEveNAviKnw
+      rest-address: http://10.97.12.80:8100
